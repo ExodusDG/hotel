@@ -8,25 +8,6 @@ $('.hamburger').click(function () {
     }
 })
 
-$('#bookRoom').click(function () {
-openBooking('room')
-})
-
-$('#bookTable').click(function () {
-    openBooking('table')
-})
-
-function openBooking(service) {
-    var target = service;
-
-    $('.booking').removeClass('bookingShow')
-    $('.' + target + 'Booking').toggleClass('bookingShow')
-}
-
-$('.bookingBack').click(function() {
-    $('.booking').removeClass('bookingShow')
-})
-
 const homepageSwiper = new Swiper('.gallerySlider', {
     direction: 'horizontal',
     loop: true,
